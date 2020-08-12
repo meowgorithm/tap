@@ -2,12 +2,12 @@
 class Pipedream < Formula
   desc "A multipart uploader for S3 and S3-compatible services."
   homepage "https://github.com/meowgorithm/pipedream"
-  version "1.0.0"
+  version "1.0.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/meowgorithm/pipedream/releases/download/v1.0.0/pipedream_1.0.0_macOS_x86_64.tar.gz"
-    sha256 "8d4880c9f21be11651fea605746be6749191b37de24ac066839ed2d6be1e45b6"
+    url "https://github.com/meowgorithm/pipedream/releases/download/v1.0.1/pipedream_1.0.1_macOS_x86_64.tar.gz"
+    sha256 "d9ee834f160661e7239c0fb2133b9e934b76929e5072a747929568323629e16d"
   elsif OS.linux?
   end
 
