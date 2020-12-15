@@ -2,13 +2,12 @@
 class Babycron < Formula
   desc "Run a single cron job in the foreground."
   homepage "https://github.com/meowgorithm/babycron"
-  version "1.0.0"
+  version "1.0.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/meowgorithm/babycron/releases/download/v1.0.0/babycron_1.0.0_macOS_x86_64.tar.gz"
-    sha256 "1f3da586fd2f569e0a93599e98c4603e87d9adc372f30d4d5afb40fb66e06690"
-  elsif OS.linux?
+    url "https://github.com/meowgorithm/babycron/releases/download/v1.0.1/babycron_1.0.1_macOS_x86_64.tar.gz"
+    sha256 "0db5e0d5d0be23d462015315305a1fca8a05c269dc332dbccb864ef632c23dc2"
   end
 
   def install
