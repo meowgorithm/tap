@@ -9,17 +9,17 @@ class Babycron < Formula
   depends_on :macos
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/meowgorithm/babycron/releases/download/v1.0.2/babycron_1.0.2_macOS_x86_64.tar.gz"
-      sha256 "9504ed994f4e25d92d6d31f26e390b0e4320138d53059867a7866e256789791d"
+    if Hardware::CPU.arm?
+      url "https://github.com/meowgorithm/babycron/releases/download/v1.0.2/babycron_1.0.2_macOS_arm64.tar.gz"
+      sha256 "eba6b880e5d1ce615935dae3a416ffed48103cf0f6bf68cacbfd192fc149e1b5"
 
       def install
         bin.install "babycron"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/meowgorithm/babycron/releases/download/v1.0.2/babycron_1.0.2_macOS_arm64.tar.gz"
-      sha256 "6ad95f2bed82c513bb8eb727b98a5ed46d2a24d71fede09f89dd953ca15a152b"
+    if Hardware::CPU.intel?
+      url "https://github.com/meowgorithm/babycron/releases/download/v1.0.2/babycron_1.0.2_macOS_x86_64.tar.gz"
+      sha256 "cae4722e3be238a30ff066209705f15aa2326be0d09f972b134d853fd3030da9"
 
       def install
         bin.install "babycron"
