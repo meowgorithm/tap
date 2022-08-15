@@ -9,17 +9,17 @@ class Pipedream < Formula
   depends_on :macos
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/meowgorithm/pipedream/releases/download/v1.1.1/pipedream_1.1.1_macOS_x86_64.tar.gz"
-      sha256 "21a0eb9109644504b80dc2cb5bd0be84e066bb5cb25c4a2885037ddbc896048b"
+    if Hardware::CPU.arm?
+      url "https://github.com/meowgorithm/pipedream/releases/download/v1.1.1/pipedream_1.1.1_macOS_arm64.tar.gz"
+      sha256 "9f4e275eea3b8746d1c5bda0c9e27107ea334b5a4eae0118c296ce77ee128d4c"
 
       def install
         bin.install "pipedream"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/meowgorithm/pipedream/releases/download/v1.1.1/pipedream_1.1.1_macOS_arm64.tar.gz"
-      sha256 "11cf2965f9c722b283332d0682b9f466b989d2f68860cffcb849cf1585730b82"
+    if Hardware::CPU.intel?
+      url "https://github.com/meowgorithm/pipedream/releases/download/v1.1.1/pipedream_1.1.1_macOS_x86_64.tar.gz"
+      sha256 "755fecad9b3aa60e49f7f9fd0751ce0821c56c9db1335e5be4ad0576048ed5a6"
 
       def install
         bin.install "pipedream"
